@@ -4,10 +4,9 @@ using namespace std;
 int main() {
   int x, y;
   
-  scanf("%d", &x);
-  scanf("%d", &y);
+  scanf("%d %d", &x, &y);
 
-  printf("PROD = %d\n", x*y);
+  printf("X = %d\n", x+y);
 
   return 0;
 }

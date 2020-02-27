@@ -6,9 +6,7 @@ int main() {
   double salario;
   double vendas;
 
-  scanf("%s", nome);
-  scanf("%lf", &salario);
-  scanf("%lf", &vendas);
+  scanf("%s %lf %lf", nome, &salario, &vendas);
 
   printf("TOTAL = R$ %.2lf\n", salario + vendas*0.15);
 

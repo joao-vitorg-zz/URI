@@ -5,11 +5,9 @@ int main() {
   unsigned int qty, h;
   double salario;
 
-  scanf("%d", &qty);
-  scanf("%d", &h);
-  scanf("%lf", &salario);
+  scanf("%u %u %lf", &qty, &h, &salario);
 
-  printf("NUMBER = %d\n", qty);
+  printf("NUMBER = %u\n", qty);
   printf("SALARY = U$ %.2lf\n", h*salario);
 
   return 0;

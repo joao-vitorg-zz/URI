@@ -6,7 +6,7 @@ int main() {
   
   scanf("%u %u %u", &a, &b, &c);
 
-  printf("%d eh o maior\n", max(max(a, b), c));
+  printf("%u eh o maior\n", max(max(a, b), c));
 
   return 0;
 }
