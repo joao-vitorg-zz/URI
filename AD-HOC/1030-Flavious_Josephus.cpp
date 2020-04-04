@@ -4,16 +4,15 @@ using namespace std;
 int main() {
   unsigned int i, c, r, nc, n, k;
 
-  scanf("%u", &nc);
+  cin >> nc;
 
   unsigned int m[nc];
 
   for (i=0; i < nc; i++) {
-    scanf("%u %u", &n, &k);
-    r = 0;
+    cin >> n >> k;
 
-    for (c=2; c <= n; c++) {
-      r = (r + k) % c;
+    for (c=2, r=0; c<=n; c++) {
+      r = (r+k) % c;
     }
 
     m[i] = r;

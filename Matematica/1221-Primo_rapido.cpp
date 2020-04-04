@@ -7,14 +7,14 @@ int main() {
   short unsigned int i, j, n, mod, aux;
   unsigned long long int x;
 
-  scanf("%hu", &n);
+  cin >> n;
 
   for (i=0; i<n; i++) {
-    scanf("%llu", &x);
+    cin >> x;
     mod = x%6;
 
     if (x==2 || x==3) {
-      printf("Prime\n");
+      cout << "Prime";
     }
     else if (mod==5 || mod==1) {
       mod = int(sqrt(x));
@@ -26,11 +26,13 @@ int main() {
         }
       }
 
-      printf(aux ? "Prime\n" : "Not Prime\n");
+      cout << (aux ? "Prime" : "Not Prime");
     }
     else {
-      printf("Not Prime\n");
+      cout << "Not Prime";
     }
+
+    cout << endl;
   }
 
   return 0;

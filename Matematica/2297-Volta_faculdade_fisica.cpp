@@ -6,6 +6,6 @@ int main() {
   unsigned int t;
 
   while (scanf("%d %u", &v, &t) != EOF) {
-    printf("%d\n", 2*v*t);
+    cout << 2*v*t << endl;
   }
 }

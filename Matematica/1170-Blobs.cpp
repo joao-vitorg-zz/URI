@@ -9,12 +9,12 @@ int main() {
   int i, n;
   double c;
 
-  scanf("%u", &n);
+  cin >> n;
 
   for (i=0; i < n; i++) {
-    scanf("%lf", &c);
+    cin >> c;
 
-    printf("%d dias\n", calc(c));
+    cout << calc(c) << " dias" << endl;
   }
 
   return 0;

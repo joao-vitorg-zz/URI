@@ -4,13 +4,12 @@ using namespace std;
 int main() {
   unsigned int idade;
 
-  scanf("%u", &idade);
+  cin >> idade;
 
-  printf("%u ano(s)\n", idade/365);
+  cout << idade/365 << " ano(s)" << endl;
   idade %= 365;
-  printf("%u mes(es)\n", idade/30);
-  idade %= 30;
-  printf("%u dia(s)\n", idade);
+  cout << idade/30 << " mes(es)" << endl;
+  cout << idade%30 << " dia(s)" << endl;
 
   return 0;
 }

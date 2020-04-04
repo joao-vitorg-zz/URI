@@ -4,9 +4,8 @@ using namespace std;
 int main() {
   unsigned short int p, r;
 
-  scanf("%hu %hu", &p, &r);
+  cin >> p >> r;
 
-  printf(p ? (r ? "A\n" : "B\n") : "C\n");
-
+  cout << (p ? (r ? 'A' : 'B') : 'C') << endl;
   return 0;
 }

@@ -4,9 +4,9 @@ using namespace std;
 int main() {
   unsigned int x;
 
-  scanf("%u", &x);
-  
-  printf("%u\n", x*4);
+  cin >> x;
+
+  cout << x*4 << endl;
 
   return 0;
 }

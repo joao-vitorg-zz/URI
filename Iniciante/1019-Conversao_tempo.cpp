@@ -2,17 +2,14 @@
 using namespace std;
 
 int main() {
-  unsigned int seg, h, m;
+  unsigned int seg, h;
   
-  scanf("%u", &seg);
+  cin >> seg;
 
   h = seg/3600;
   seg %= 3600;
   
-  m = seg/60;
-  seg %= 60;
-  
-  printf("%u:%u:%u\n", h, m, seg);
+  printf("%u:%u:%u\n", h, seg/60, seg%60);
 
   return 0;
 }

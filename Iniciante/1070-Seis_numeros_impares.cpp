@@ -4,14 +4,14 @@ using namespace std;
 int main() {
   int x;
 
-  scanf("%d", &x);
+  cin >> x;
 
-  printf("%d\n", x+1);
-  printf("%d\n", x+3);
-  printf("%d\n", x+5);
-  printf("%d\n", x+7);
-  printf("%d\n", x+9);
-  printf("%d\n", x+11);
+  cout << x+1 << endl; 
+  cout << x+3 << endl; 
+  cout << x+5 << endl; 
+  cout << x+7 << endl; 
+  cout << x+9 << endl; 
+  cout << x+11 << endl; 
 
   return 0;
 }

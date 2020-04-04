@@ -9,7 +9,7 @@ int main() {
   unsigned int n, m;
 
   while (scanf("%u %u", &n, &m) != EOF) {
-    printf("%llu\n", fat(n)+fat(m));
+    cout << fat(n)+fat(m) << endl;
   }
 
   return 0;

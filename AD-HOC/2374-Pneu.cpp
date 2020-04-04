@@ -2,11 +2,11 @@
 using namespace std;
 
 int main() {
-  unsigned int n, m;
+  short int n, m;
 
-  scanf("%u %u", &n, &m);
+  cin >> n >> m ;
 
-  printf("%u\n", n-m);
+  cout << (n-m) << endl;
 
   return 0;
 }
