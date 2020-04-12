@@ -2,11 +2,10 @@
 using namespace std;
 
 int main() {
-  int km;
+  unsigned int km;
 
-  scanf("%d", &km);
-
-  printf("%d minutos\n", km*2);
+  cin >> km;
+  cout << km*2 << " minutos" << endl;
 
   return 0;
 }
