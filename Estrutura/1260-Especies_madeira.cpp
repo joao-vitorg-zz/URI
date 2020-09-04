@@ -4,35 +4,34 @@
 using namespace std;
 
 int main() {
-  freopen("../.debug/input.txt", "r", stdin);
-  freopen("../.debug/output.txt", "w", stdout);
-
-  map <string, double> arvores;
-  unsigned int n, total;
-  string arvore;
-  bool imprime;
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
 
   cout.precision(4);
   cout << fixed;
 
-  cin >> n;
-  cin.get();
-  getline(cin, arvore);
+  unsigned int i, t, total;
+  map <string, unsigned int> arvores;
+  bool flag=false;
+  string arvore;
 
-  while (n--) {
-    arvores.clear();
-    total=0;
+  cin >> t;
+  cin.ignore();
+  cin.ignore();
 
-    if (imprime) cout << endl;
-    else imprime=true;
-  
-    while (getline(cin, arvore) && arvore[0]) {
+  while (t--) {
+    if (flag) {
+      arvores.clear();
+      cout << endl;
+    }
+    else flag=true;
+
+    for (total=0; getline(cin, arvore) && arvore!=""; total++) {
       arvores[arvore]++;
-      total++;
     }
 
-    for (auto A : arvores) { 
-      cout << A.first << ' ' << A.second*100/total << endl;
+    for (auto A : arvores) {
+      cout << A.first << ' ' << (double) A.second/total*100 << endl;
     }
   }
 
